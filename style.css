@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(starry-night-sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.earth{
+    height: 350px;
+    width: 350px;
+    background-image: url(earth-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    animation: earth 10s linear infinite;  
+}
+@keyframes earth{
+    100%{
+        transform: translate(-50%,-50%)
+        rotate(-360deg);
+    }
+}
+
+.rotate{
+    height: 360px;
+    width:360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    animation: car 10s linear infinite;
+}
+
+.car{
+    height: 105px;
+    width: 105px;
+    transform: translate(-50%,-50%) rotate(-35deg);    
+}
+@keyframes car{
+    100%{
+        transform: translate(-50%,-50%)
+        rotate(360deg);
+    }
+}
